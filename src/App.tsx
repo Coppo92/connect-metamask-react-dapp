@@ -2,6 +2,11 @@ import { ChakraProvider, useDisclosure } from "@chakra-ui/react";
 import theme from "./theme";
 import Layout from "./components/Layout";
 import ConnectButton from "./components/ConnectButton";
+// other code
+
+<Layout>
+  <ConnectButton />
+</Layout>
 import AccountModal from "./components/AccountModal";
 import "@fontsource/inter";
 
