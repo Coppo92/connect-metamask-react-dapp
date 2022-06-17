@@ -1,6 +1,34 @@
-import { ChakraProvider, useDisclosure } from "@chakra-ui/react";
+import { ChakraProvider } from "@chakra-ui/react";
+
+export default function App() {
+  return (
+    // lets us use Chakra UI syntax across our app:
+    <ChakraProvider>
+      // we'll add content to our app shortly
+    </ChakraProvider>
+  )
+}
 import theme from "./theme";
-import Layout from "./components/Layout";
+import { ReactNode } from "react";
+import { Flex } from "@chakra-ui/react";
+
+type Props = {
+  children?: ReactNode;
+};
+
+export default function Layout({ children }: Props) {
+  return (
+    <Flex
+      flexDirection="column"
+      alignItems="center"
+      justifyContent="center"
+      h="100vh"
+      bg="gray.800"
+    >
+      {children}
+    </Flex>
+  )
+}
 import ConnectButton from "./components/ConnectButton";
 // other code
 
