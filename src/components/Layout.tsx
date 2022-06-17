@@ -1,3 +1,4 @@
+// Layout.tsx
 import { ReactNode } from "react";
 import { Flex } from "@chakra-ui/react";
 
@@ -16,5 +17,5 @@ export default function Layout({ children }: Props) {
     >
       {children}
     </Flex>
-  );
+  )
 }
